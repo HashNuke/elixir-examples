@@ -1,4 +1,4 @@
-defmodule ElixirSamples.Mixfile do
+defmodule ElixirExamples.Mixfile do
   use Mix.Project
 
   def project do

@@ -1,3 +1,3 @@
-# Elixir Samples
+# Elixir Examples
 
 Sample elixir applications
