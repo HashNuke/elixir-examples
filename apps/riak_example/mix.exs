@@ -17,8 +17,7 @@ defmodule RiakExample.Mixfile do
   # { :foobar, "~> 0.1", git: "https://github.com/elixir-lang/foobar.git" }
   defp deps do
     [
-      {:riakc,  github: "basho/riak-erlang-client"},
-      {:jsx,    github: "talentdeficit/jsx", tag: "v1.4.3"}
+      {:riakc,  github: "basho/riak-erlang-client"}
     ]
   end
 end
