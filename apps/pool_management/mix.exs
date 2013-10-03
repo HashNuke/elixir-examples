@@ -11,13 +11,7 @@ defmodule PoolManagement.Mixfile do
   # Configuration for the OTP application
   def application do
     [
-      registered: [:hello_server],
-      mod: { PoolManagement, [] },
-      env: [
-        pools: [
-          hello: [size: 5, max_overflow: 10]
-        ]
-      ]
+      mod: { PoolManagement, [] }
     ]
   end
 

@@ -6,12 +6,16 @@ defmodule PoolManagement.Supervisor do
   end
 
   def init([]) do
-    children = [
-      worker(PoolManagement.HelloServer, [])
+    pool_options = [
+      name: {:local, :hello_pool},
+      worker_module: PoolManagement.HelloWorker,
+      size: 5,
+      max_overflow: 10
     ]
 
-    # See http://elixir-lang.org/docs/stable/Supervisor.Behaviour.html
-    # for other strategies and supported options
+    children = [
+      :poolboy.child_spec(:hello_pool, pool_options, [])
+    ]
     supervise(children, strategy: :one_for_one)
   end
 end
