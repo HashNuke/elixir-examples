@@ -1,0 +1,1 @@
+[ "poolboy": {:git, "git://github.com/devinus/poolboy.git", "91b68de43d49bcccf2631016febda70b20d7aa75", [{:tag, "1.0.0"}]} ]

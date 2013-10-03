@@ -7,8 +7,7 @@ defmodule PoolManagement.Supervisor do
 
   def init([]) do
     children = [
-      # Define workers and child supervisors to be supervised
-      # worker(PoolManagement.Worker, [])
+      worker(PoolManagement.HelloServer, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/Supervisor.Behaviour.html
